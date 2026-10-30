@@ -1,0 +1,14 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "EEG Decoding from Scratch"
+  site-url: "https://bkowshik.github.io/eeg-decoding-from-scratch"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/bkowshik/eeg-decoding-from-scratch"
+
+format-links:
+  - html
+  - format: commonmark
+    text: Markdown

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eegdfs"
+dynamic = ["version"]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Bhargav Kowshik", email = "bhargav.kowshik@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/bkowshik/eeg-decoding-from-scratch"
+Documentation = "https://bkowshik.github.io/eeg-decoding-from-scratch/"
+
+[project.entry-points.nbdev]
+eegdfs = "eegdfs._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "eegdfs.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["eegdfs"]
+
+[tool.nbdev]
+title = "EEG Decoding from Scratch"
